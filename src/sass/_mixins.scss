@@ -1,0 +1,68 @@
+@mixin flexy($disp: flex,
+    $wrap: null,
+    $just: null,
+    $dir: null,
+    $justs: null,
+    $alignc: null,
+    $aligni: null,
+    $aligns: null,
+    $flex: null) {
+    display: $disp;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+    justify-content: $just;
+    justify-self: $justs;
+    align-content: $alignc;
+    align-items: $aligni;
+    align-self: $aligns;
+    flex: $flex;
+    @content
+}
+
+@mixin grid {
+    @for $i from 2 through 12 {
+        &--#{$i} {
+            margin-top: 10px;
+            flex-basis: 100%;
+        }
+    }
+}
+
+@mixin grid-mq {
+
+    @each $key,
+    $val in $grid-map {
+        @for $i from 2 through $val {
+            $equ: #{$i / $val * 100 + "%"};
+            &--#{$i} {
+                flex-basis: $equ;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@mixin breakpoint($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+        // Prints a media query based on the value
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+    // If the key doesn't exist in the map
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        +"Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
+
+
+$breakpoints: (small: 0,
+    medium: 768px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px,
+);
+$print-breakpoint: large;
+$breakpoint-classes: (small medium large);

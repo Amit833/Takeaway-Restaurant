@@ -1,0 +1,46 @@
+// ==============================
+// Global Variables
+// ==============================
+
+//global
+$max-width: 1400px;
+$list: none;
+
+// font-family
+$font-url--google : 'https://fonts.googleapis.com/css?family=Raleway Titillium+Web';
+$font-family--primary : 'Raleway',
+'Helvetica Neue',
+Helvetica,
+Arial,
+sans-sarif;
+$font-family--secondary : 'Titillium Web',
+Arial,
+'Helvetica Neue';
+
+// text
+$font-size--p: 1.2em;
+$font-size--h: 2em;
+$font-weight--h: bold;
+$line--height: 1.5em;
+$text--transform: uppercase;
+
+// colors
+$white: #fff;
+$black: #000;
+$grey : #999;
+
+$primary: #fff;
+$secondary: #000;
+$accent: #cd3e36;
+
+$color--base: rgba(65, 177, 130, 0.877);
+$color-base--dark: darken($color--base, 25%);
+$color-base--light: lighten($color--base, 25%);
+
+$complement: complement($color--base);
+$complement-light: lighten($complement, 30%);
+
+// Buttons
+$global-padding: 1rem;
+$global-margin: .4rem;
+$global-border-radius: .4rem;

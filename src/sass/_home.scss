@@ -1,0 +1,172 @@
+a {
+  color: inherit;
+}
+
+.heroImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .heroContents {
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 2rem;
+      padding: 3rem;
+    }
+  }
+}
+////////////////////////////////////////////////
+
+.restaurant_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+  .restaurant_info_text {
+    width: 50%;
+    h2 {
+      margin: 2rem 0;
+      text-align: center;
+      font-size: 2.8rem;
+    }
+    p {
+      margin-top: 1rem;
+    }
+  }
+}
+////////////////////////////////////////////////
+
+.take_away {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .content_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    h1 {
+      color: $primary;
+      font-size: 3.5rem;
+    }
+    p {
+      color: $primary;
+      font-size: 2rem;
+    }
+    button {
+      color: $primary;
+      border-color: $primary;
+      background: transparent;
+      padding: 1rem;
+      margin: 4rem;
+      border-radius: 3rem;
+    }
+  }
+}
+////////////////////////////////////////////////
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  .menu_card_container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    .menu_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .content_wrap {
+        .image_wrap {
+          img {
+            width: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+          }
+        }
+        .text_container {
+          margin: 1rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
+  button {
+    text-align: center;
+    color: $secondary;
+    border-color: $secondary;
+    background: transparent;
+    padding: 1rem;
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+////////////////////////////////////////////////
+
+.location_img {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .content_wrap {
+    padding: 1rem;
+    h1 {
+      color: $primary;
+      font-size: 3.4rem;
+    }
+  }
+}
+
+.location_card_container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  .loaction_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $secondary;
+    padding: 1rem;
+    margin: 1rem;
+    .content_wrap {
+      padding: 1rem;
+    }
+  }
+}

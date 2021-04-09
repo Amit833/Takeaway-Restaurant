@@ -1,0 +1,151 @@
+.nav {
+    background-color: $secondary;
+    position: relative;
+    padding: $global-padding;
+
+    @include breakpoint(medium) {
+        @include flexy($aligni: center);
+        height: 4vh;
+    }
+
+    .hamburgerToggle {
+        width: 1.2rem;
+        padding: .3rem;
+        z-index: 20;
+        left: .6rem;
+        right: 0;
+        top: .6rem;
+        position: absolute;
+        @include flexy($dir: column);
+        cursor: pointer;
+
+        span {
+            width: 1rem;
+            border-bottom: .2rem solid $accent;
+            margin-bottom: .05rem;
+            padding: .1rem;
+        }
+    }
+
+    .nav-links {
+        left: -16px;
+        top: 0;
+        height: 100vh;
+        width: 30vw;
+        background-color: $secondary;
+        position: absolute;
+        @include flexy($just: center,
+            $dir: column,
+            $aligni: center);
+        padding: $global-padding;
+        z-index: 1;
+
+        @include breakpoint(medium) {
+            position: static;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-right: 0;
+            height: 100%;
+            width: 90%;
+        }
+
+        .nav-link {
+            width: 25vw;
+            background-color: $accent;
+            margin: $global-margin;
+            padding: $global-padding;
+            border-radius: $global-border-radius;
+            text-align: center;
+
+            @include breakpoint(medium) {
+                @include flexy($aligni: center, $just: center);
+                background-color: $secondary;
+                margin: 0;
+                height: 2vh;
+                width: 4.5rem;
+            }
+            @include breakpoint(large) {
+                width: 5rem;
+            }
+        }
+    }
+    .logo {
+        @include flexy($just: center, $aligni: center);
+        position: absolute;
+        top: .1rem;
+        left: 44%;
+        margin: 0;
+        width: 3rem;
+        img {
+            width: 100%;
+        }
+        @include breakpoint(medium) {
+            top: .2rem;
+            left: 2rem;
+            z-index: 2;
+            width: 6rem;
+        }
+    }
+    .basket-icon {
+        @include flexy($just: flex-end, $aligni: center);
+        .nav-link {
+            @include breakpoint(medium) {
+                text-align: center;
+                width: 6rem;
+            }
+            a {
+                width: 4rem;
+                padding: $global-padding;
+            }
+        }
+    }
+
+    a {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+.initialClose {
+    transform: translateX(-500px);
+}
+
+.close {
+    animation: slideOut 400ms ease forwards;
+}
+
+.open {
+    animation: slideIn 400ms ease forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+}

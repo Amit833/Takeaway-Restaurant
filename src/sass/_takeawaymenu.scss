@@ -1,0 +1,18 @@
+.takeawaymenu_container {
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  line-height: 75px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  margin: 3rem;
+
+  img {
+    height: 200px;
+    width: 250px;
+  }
+}

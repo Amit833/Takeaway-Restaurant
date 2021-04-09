@@ -1,0 +1,50 @@
+footer {
+  background-color: black;
+  color: white;
+  height: 80vh;
+  @include breakpoint(medium) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+  }
+
+  .locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(medium) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .icon {
+      padding: 5px;
+    }
+    @include breakpoint(medium) {
+      margin-top: 120px;
+    }
+  }
+
+  .reserved {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: auto;
+  }
+}

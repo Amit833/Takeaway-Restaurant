@@ -1,0 +1,23 @@
+.search-container {
+@include flexy($just: center, $dir: column);
+    .searchbar {
+        @include flexy($just: center);
+        padding: $global-padding;
+        
+        input {
+            padding: .4rem;
+        }
+    }
+    .button-container {
+        @include flexy($just: center);
+        button {
+            background-color: $accent;
+            padding: .5rem;
+            margin: .1rem;
+            border: transparent;
+            color: $primary;
+            cursor: pointer;
+        }
+    }
+}
+

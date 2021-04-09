@@ -1,0 +1,170 @@
+{
+  "menu": {
+    "appetizer": [
+      {
+        "id": "94321",
+        "name": "Bratwurst",
+        "price": {
+          "currency": "euro",
+          "price": 10.0,
+          "priceName": "10"
+        },
+        "description": "",
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "appetizer"
+      },
+      {
+        "id": "94311",
+        "name": "Edamame",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "description": "",
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "appetizer"
+      }
+    ],
+    "sushi": [
+      {
+        "id": "84312",
+        "name": "Ume",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "description": "",
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "sushi"
+      },
+      {
+        "id": "84412",
+        "name": "falafel",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "description": "",
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "sushi"
+      }
+    ],
+    "hot-dishes": [
+      {
+        "id": "74313",
+        "name": "Beef Amiyaki",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "description": "",
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "hot-dishes"
+      },
+      {
+        "id": "743137",
+        "name": "Chicken Masala",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "description": "",
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "hot-dishes"
+      }
+    ],
+    "desserts": [
+      {
+        "id": "64314",
+        "name": "Mochi Icecream",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "description": "",
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "desserts"
+      },
+      {
+        "id": "6434",
+        "name": "Spanish Icecream",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "description": "",
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "desserts"
+      }
+    ],
+    "drinks": [
+      {
+        "id": "54315",
+        "name": "coke",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "drinks",
+        "sizes": ["small", "large"]
+      },
+      {
+        "id": "54316",
+        "name": "pepsi",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "images": "https://picsum.photos/200/300",
+        "qty": 1,
+        "category": "drinks",
+        "sizes": ["small", "large"]
+      },
+      {
+        "id": "54317",
+        "name": "water",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "qty": 1,
+        "images": "https://picsum.photos/200/300",
+        "category": "drinks",
+        "sizes": ["small", "large"]
+      },
+      {
+        "id": "54318",
+        "name": "wine",
+        "price": {
+          "currency": "euro",
+          "price": 10,
+          "priceName": "10"
+        },
+        "qty": 1,
+        "images": "https://picsum.photos/200/300",
+        "category": "drinks",
+        "sizes": ["small", "large"]
+      }
+    ]
+  }
+}

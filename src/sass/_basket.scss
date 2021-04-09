@@ -1,0 +1,113 @@
+.basket_container {
+  margin: 1rem;
+  max-width: 380px;
+  border: 4px solid $primary;
+
+  box-shadow: 0px 0px 0px 1px #c5bebe inset;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.basket_header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  .arrow {
+    align-self: center;
+  }
+  .title {
+  }
+}
+
+.empty_basket_container {
+  margin: 1rem;
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+  .img_container {
+    text-align: center;
+
+    img {
+      width: 200px;
+      height: auto;
+    }
+  }
+}
+.basket_item_container {
+  font-size: 1.1rem;
+}
+
+.btn_goback_container {
+  text-align: center;
+}
+.btn_goback {
+  background-color: $accent;
+  color: $primary;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 300px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  border: 4px solid $primary;
+  box-shadow: 0px 0px 0px 1px #ef9191 inset;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    border: 4px solid #ef9191;
+    box-shadow: 0px 0px 0px 4px #eee inset;
+    background-color: $accent;
+  }
+}
+
+.icon {
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.basket_total_container {
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_order_container {
+  text-align: center;
+}
+
+.btn_order {
+  background-color: $accent;
+  color: $primary;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 300px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  border: 4px solid $primary;
+  box-shadow: 0px 0px 0px 1px rgb(243, 238, 238) inset;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    border: 4px solid rgb(223, 149, 149);
+    box-shadow: 0px 0px 0px 4px #eee inset;
+    background-color: $accent;
+  }
+}
